@@ -6,11 +6,12 @@ public class BallPuzzleGoalScript : MonoBehaviour
 {
     public GameObject ball;
     public GameObject exitDoor;
+    public GameObject exitButton;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        exitButton.SetActive(false);
     }
 
     // Update is called once per frame
@@ -25,6 +26,7 @@ public class BallPuzzleGoalScript : MonoBehaviour
         {
             ball.SetActive(false);
             exitDoor.SetActive(false);
+            exitButton.SetActive(true);
         }
     }
 }

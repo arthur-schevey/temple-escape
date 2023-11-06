@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class BallPuzzleScript : MonoBehaviour
 {
@@ -8,6 +10,8 @@ public class BallPuzzleScript : MonoBehaviour
     public GameObject platform1;
     public GameObject platform2;
     public GameObject platform3;
+    private GameObject spawn;
+    private GameObject death;
     private float angle = 70f;
     private Vector3 spawnPoint;
     private float killPoint;
@@ -36,6 +40,17 @@ public class BallPuzzleScript : MonoBehaviour
        if (ball.transform.position.y <= killPoint) {
         ball.transform.position = spawnPoint;
        }
+    }
+
+    public void NextLevel() {
+        int index = SceneManager.GetActiveScene().buildIndex + 1;
+            if (index < SceneManager.sceneCountInBuildSettings)
+            {
+                SceneManager.LoadScene(index);
+            } else
+            {
+                print("No scene");
+            }
     }
 
 }
