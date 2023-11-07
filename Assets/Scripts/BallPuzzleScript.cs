@@ -10,8 +10,8 @@ public class BallPuzzleScript : MonoBehaviour
     public GameObject platform1;
     public GameObject platform2;
     public GameObject platform3;
-    private GameObject spawn;
-    private GameObject death;
+    public GameObject spawn;
+    public GameObject death;
     private float angle = 70f;
     private Vector3 spawnPoint;
     private float killPoint;
@@ -19,8 +19,10 @@ public class BallPuzzleScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spawnPoint = new Vector3(-1.5f, 4.5f, 11f);
-        killPoint = 0.25f;
+        // spawnPoint = new Vector3(-1.5f, 4.5f, 11f);
+        // killPoint = 0.25f;
+        spawnPoint = spawn.transform.position;
+        killPoint = death.transform.position.y;
     }
 
     // Update is called once per frame
