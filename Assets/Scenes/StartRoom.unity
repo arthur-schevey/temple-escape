@@ -1085,7 +1085,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 775816725}
         m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: ResetGame
+        m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
