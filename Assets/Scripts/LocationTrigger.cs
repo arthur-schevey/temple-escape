@@ -19,14 +19,15 @@ public class LocationTrigger : MonoBehaviour
         obj.setUnlocked(level);
     }
 
+
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
+
             int index = SceneManager.GetActiveScene().buildIndex + 1;
             if (index < SceneManager.sceneCountInBuildSettings)
             {
-                Unlock();
                 SceneManager.LoadScene(index);
             } else
             {
