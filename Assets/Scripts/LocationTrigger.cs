@@ -5,16 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class LocationTrigger : MonoBehaviour
 {
+
+    DontDestory obj;
+    public int level;
     // Start is called before the first frame update
     void Start()
     {
-        
+        obj = GameObject.FindObjectOfType<DontDestory>();
     }
 
-    // Update is called once per frame
-    void Update()
+    void Unlock()
     {
-        
+        obj.setUnlocked(level);
     }
 
     void OnTriggerEnter(Collider other)
@@ -24,6 +26,7 @@ public class LocationTrigger : MonoBehaviour
             int index = SceneManager.GetActiveScene().buildIndex + 1;
             if (index < SceneManager.sceneCountInBuildSettings)
             {
+                Unlock();
                 SceneManager.LoadScene(index);
             } else
             {
