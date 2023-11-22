@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PuzzleBall
   - Goal
+  - StackingBlock
   layers:
   - Default
   - TransparentFX
