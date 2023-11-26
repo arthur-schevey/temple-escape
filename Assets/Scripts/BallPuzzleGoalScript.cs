@@ -5,7 +5,6 @@ using UnityEngine;
 public class BallPuzzleGoalScript : MonoBehaviour
 {
     public GameObject ball;
-    public GameObject exitDoor;
     public GameObject exitButton;
     public GameObject floor;
 
@@ -26,7 +25,6 @@ public class BallPuzzleGoalScript : MonoBehaviour
         if(goal.gameObject.CompareTag("PuzzleBall"))
         {
             ball.SetActive(false);
-            exitDoor.SetActive(false);
             exitButton.SetActive(true);
             floor.SetActive(false);
         }

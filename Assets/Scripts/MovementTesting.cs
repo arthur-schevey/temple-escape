@@ -6,6 +6,9 @@ using UnityEngine.XR.Management;
 
 public class MovementTesting : MonoBehaviour
 {
+    public XRHand hand;
+    public GameObject displayTransform;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,12 +20,14 @@ public class MovementTesting : MonoBehaviour
 
         if (m_Subsystem != null)
             m_Subsystem.updatedHands += OnHandUpdate;
+
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        JointData();
     }
 
     void OnHandUpdate(XRHandSubsystem subsystem,
@@ -37,6 +42,26 @@ public class MovementTesting : MonoBehaviour
             case XRHandSubsystem.UpdateType.BeforeRender:
                 // Update visual objects that use hand data
                 break;
+        }
+    }
+
+    void JointData()
+    {
+        for (var i = XRHandJointID.BeginMarker.ToIndex();
+        i < XRHandJointID.EndMarker.ToIndex();
+        i++)
+        {
+            var trackingData = hand.GetJoint(XRHandJointIDUtility.FromIndex(i));
+
+            if (trackingData.TryGetPose(out Pose pose))
+            {
+                // displayTransform is some GameObject's Transform component
+                displayTransform.transform.localPosition = pose.position;
+                displayTransform.transform.localRotation = pose.rotation;
+            }
+            else {
+                Debug.Log("somethings wrong");
+            }
         }
     }
 
