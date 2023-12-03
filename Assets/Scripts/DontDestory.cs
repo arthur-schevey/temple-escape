@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class DontDestory : MonoBehaviour
 {
 
@@ -9,8 +10,7 @@ public class DontDestory : MonoBehaviour
     public bool level2 = false;
     public bool level3 = false;
     public bool level4 = false;
-
-
+    
 
     public void setUnlocked(int i)
     {
