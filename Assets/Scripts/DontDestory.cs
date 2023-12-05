@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class DontDestory : MonoBehaviour
 {
-
-
+    private static DontDestory reference = null;
     public bool level2 = false;
     public bool level3 = false;
     public bool level4 = false;
@@ -32,6 +31,14 @@ public class DontDestory : MonoBehaviour
 
     void Awake()
     {
-        DontDestroyOnLoad(this);
+        if (reference == null)
+        {
+            reference = this;
+            DontDestroyOnLoad(this);
+        } 
+        else
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

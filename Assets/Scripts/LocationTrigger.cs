@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class LocationTrigger : MonoBehaviour
 {
-
     DontDestory obj;
     public int level;
     // Start is called before the first frame update
@@ -28,6 +27,7 @@ public class LocationTrigger : MonoBehaviour
             int index = SceneManager.GetActiveScene().buildIndex + 1;
             if (index < SceneManager.sceneCountInBuildSettings)
             {
+                Unlock();
                 SceneManager.LoadScene(index);
             } else
             {

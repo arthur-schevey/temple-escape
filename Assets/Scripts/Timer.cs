@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
+    public GameObject reference;
     public int time;
     public TextMeshProUGUI timer;
     float fps = 1f;
@@ -40,8 +41,7 @@ public class Timer : MonoBehaviour
     {
         curTime += Time.deltaTime;
         Debug.Log(curTime);
-        Debug.Log(fps);
-
+        Debug.Log(time);
         if (curTime > fps)
         {
             if (time > 0)
@@ -51,9 +51,16 @@ public class Timer : MonoBehaviour
             }
             else
             {
+                Destroy(this);
                 SceneManager.LoadScene(0);
             }
             curTime = 0f;
         }
+    }
+
+
+    void Awake()
+    {
+        DontDestroyOnLoad(this);
     }
 }

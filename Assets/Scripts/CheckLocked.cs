@@ -6,13 +6,14 @@ using UnityEngine.Events;
 public class CheckLocked : MonoBehaviour
 {
 
-    public DontDestory levels;
+    DontDestory levels;
     public UnityEvent onUnlock;
     bool chk = true;
     public int level;
 
     void Update()
     {
+        levels = GameObject.FindObjectOfType<DontDestory>();
         switch (level)
         {
             case 2:
