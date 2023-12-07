@@ -2,36 +2,46 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlockStack : MonoBehaviour
+public class StackingBlockChecker : MonoBehaviour
 {
-
-    public GameObject objectToEnable;
-    // Start is called before the first frame update
-    void Start()
-    {
+    void Start()    {
         
     }
-
     // Update is called once per frame
     void Update()
     {
-        
+        // Check if three StackingBlock objects are touching the current object
+        if (CheckStackingBlocksTouching())
+        {
+            // Do something when three StackingBlocks are touching
+            Debug.Log("Three StackingBlocks are touching!");
+        }
     }
 
-    void OnCollisionStay(Collision collision)
+    bool CheckStackingBlocksTouching()
     {
-        
-        if (collision.gameObject.CompareTag("StackingBlock"))
-        {
-            Debug.Log("Blocks are stacked");
-            Collider[] colliders = GetComponents<Collider>();
+        // Get all colliders touching the current object
+        Collider[] colliders = Physics.OverlapBox(transform.position, transform.localScale / 2);
 
-            if (colliders.Length == 3)
+        int stackingBlockCount = 0;
+
+        // Check each collider
+        foreach (Collider collider in colliders)
+        {
+            // Check if the collider has the tag 'StackingBlock'
+            if (collider.CompareTag("StackingBlock"))
             {
-                objectToEnable.SetActive(true);
-            }   else    {
-                objectToEnable.SetActive(false);
+                stackingBlockCount++;
+
+                // If three StackingBlocks are touching, return true
+                if (stackingBlockCount >= 3)
+                {
+                    return true;
+                }
             }
         }
+
+        // Return false if less than three StackingBlocks are touching
+        return false;
     }
 }
