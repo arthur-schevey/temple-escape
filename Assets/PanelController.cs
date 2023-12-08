@@ -29,12 +29,32 @@ public class PanelController : MonoBehaviour
         text = "";
     }
 
-    public void EnterText(string t)
+   public void EnterText(string t)
+{
+    if (limitLength)
     {
-        if (limitLength && text.Length == limit)
+        text += t;
+
+        // Debug log to trace entering text and current text length
+        Debug.Log($"Text Entered: {t}, Current Text: {text}, Current Length: {text.Length}");
+
+        if (text.Length == limit)
         {
+            // Check if the entered code is correct
+            bool isCorrect = CheckCorrectCode(text);
+
+            // Display "Correct" or "Wrong" on the panel
             Clear();
+            EnterText(isCorrect ? "Correct" : "Wrong");
+
+            // Start a coroutine to clear the panel after 1.5 seconds
+            StartCoroutine(ClearPanelAfterDelay(1.5f));
         }
+    }
+    else
+    {
         text += t;
     }
+}
+
 }
