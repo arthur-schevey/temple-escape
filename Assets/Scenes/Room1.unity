@@ -828,6 +828,14 @@ PrefabInstance:
       propertyPath: m_MoveSpeed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7858958239974820153, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
+      propertyPath: m_AllowHoveredActivate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973328002167281074, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
+      propertyPath: m_AllowHoveredActivate
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7990873189708867121, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -15633,8 +15641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 964523eb12ae3be4191e23799828d6c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reference: {fileID: 1150907417}
-  time: 10
+  time: 120
   timer: {fileID: 1581193122}
 --- !u!1 &1198993159
 GameObject:
