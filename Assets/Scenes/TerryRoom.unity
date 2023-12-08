@@ -188,8 +188,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 5
-  m_fontSizeBase: 5
+  m_fontSize: 3
+  m_fontSizeBase: 3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -12003,7 +12003,7 @@ GameObject:
   - component: {fileID: 311929717}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12015,7 +12015,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 311929716}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
@@ -12613,7 +12613,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: a
+          m_StringArgument: 1
           m_BoolArgument: 0
         m_CallState: 2
   m_SelectExited:
@@ -30458,7 +30458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelController: {fileID: 869047172}
-  unlockCode: 0226
+  unlockCode: 4444
   onUnlock:
     m_PersistentCalls:
       m_Calls:
@@ -30486,6 +30486,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  door: {fileID: 0}
 --- !u!82 &869047171
 AudioSource:
   m_ObjectHideFlags: 0
@@ -32634,7 +32635,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e94e6b99ba539cd4da67c0c7d81c0c5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToEnable: {fileID: 0}
 --- !u!1 &1137606344
 GameObject:
   m_ObjectHideFlags: 0
@@ -43212,7 +43212,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1, z: 4}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1317365018
 MeshRenderer:
@@ -64743,7 +64743,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e94e6b99ba539cd4da67c0c7d81c0c5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToEnable: {fileID: 0}
 --- !u!1 &1759416008
 GameObject:
   m_ObjectHideFlags: 0
@@ -69648,7 +69647,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e94e6b99ba539cd4da67c0c7d81c0c5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToEnable: {fileID: 0}
 --- !u!1 &1763920134
 GameObject:
   m_ObjectHideFlags: 0

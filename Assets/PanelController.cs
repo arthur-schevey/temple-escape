@@ -9,7 +9,7 @@ public class PanelController : MonoBehaviour
 
     public bool limitLength = true;
 
-    public int limit = 3;
+    public int limit = 4;
 
     private string text = "";
     
