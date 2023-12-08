@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class UnlockWithCode : MonoBehaviour
 {
     public PanelController panelController;
-    public string unlockCode = "4444";
+    public string unlockCode = "4234";
     public UnityEvent onUnlock;
 
     private bool locked = true;
