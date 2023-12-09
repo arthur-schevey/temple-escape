@@ -5,22 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/StartRoom.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Room1.unity
     guid: e7e1bef8fa2d8154698dab36d3a3a758
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BallRoom.unity
     guid: b6299bd0b4829de469914f8663da53d9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TerryRoom.unity
     guid: 91561dd017bf7894d85dcb1ad4f76633
   - enabled: 1
     path: Assets/Scenes/Andrew Room.unity
     guid: 8058b105f6192254b82bcf94b288d86a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/End.unity
     guid: b5e71427ab1714f4f8d16e23d71536bd
   - enabled: 0
