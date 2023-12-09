@@ -37,8 +37,8 @@ public class TimerPhysical : MonoBehaviour
     void Update()
     {
         curTime += Time.deltaTime;
-        Debug.Log(curTime);
-        Debug.Log(time);
+        // Debug.Log(curTime);
+        // Debug.Log(time);
         if (curTime > fps)
         {
             if (time > 0)
