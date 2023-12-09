@@ -9,7 +9,20 @@ public class DontDestory : MonoBehaviour
     public bool level2 = false;
     public bool level3 = false;
     public bool level4 = false;
-    
+    public bool restart = false;
+
+
+    public void Restart_Levels()
+    {
+        if (restart)
+        {
+            level2 = false;
+            level3 = false;
+            level4 = false;
+            restart = false;
+        }
+    }
+
 
     public void setUnlocked(int i)
     {
@@ -23,6 +36,9 @@ public class DontDestory : MonoBehaviour
                 break;
             case 4:
                 level4 = true;
+                break;
+            case 5:
+                restart = true;
                 break;
             default:
                 break;

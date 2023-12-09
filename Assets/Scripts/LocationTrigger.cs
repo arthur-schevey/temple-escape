@@ -23,15 +23,16 @@ public class LocationTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-
             int index = SceneManager.GetActiveScene().buildIndex + 1;
             if (index < SceneManager.sceneCountInBuildSettings)
             {
                 Unlock();
                 SceneManager.LoadScene(index);
-            } else
+            }
+            else
             {
-                print("No scene");
+                obj.Restart_Levels();
+                SceneManager.LoadScene(0);
             }
         }
     }
