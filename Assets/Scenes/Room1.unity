@@ -8620,7 +8620,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!1 &847760336
 GameObject:
   m_ObjectHideFlags: 0
@@ -15258,7 +15258,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!1 &1103960371
 GameObject:
   m_ObjectHideFlags: 0
@@ -15619,9 +15619,9 @@ Canvas:
   m_GameObject: {fileID: 1150907417}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_RenderMode: 1
+  m_Camera: {fileID: 1853261551}
+  m_PlaneDistance: 0.5
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -19233,6 +19233,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1845739485}
   m_CullTransparentMesh: 1
+--- !u!20 &1853261551 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 7990873191231833673, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
+  m_PrefabInstance: {fileID: 787874712}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1882746913
 GameObject:
   m_ObjectHideFlags: 0
