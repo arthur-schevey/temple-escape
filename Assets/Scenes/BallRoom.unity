@@ -29524,6 +29524,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 832857127367654161, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 865075385244835223, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
       propertyPath: m_Name
       value: XR Interaction Hands
@@ -29544,6 +29548,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3058369994437680904, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3104411857632636852, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
       propertyPath: m_MaxRaycastDistance
       value: 20
@@ -29551,6 +29559,10 @@ PrefabInstance:
     - target: {fileID: 3218621196531411551, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
       propertyPath: m_SmoothMotionEnabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395678103393010410, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
+      propertyPath: m_AllowHoveredActivate
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4413391405205431015, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
       propertyPath: m_PoseUpdated.m_PersistentCalls.m_Calls.Array.size
@@ -29563,6 +29575,10 @@ PrefabInstance:
     - target: {fileID: 4413391405205431015, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
       propertyPath: m_PoseUpdated.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5217560095829183325, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5224629633635038180, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
       propertyPath: m_IsActive
@@ -29620,6 +29636,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7608579954974633796, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7822482028367199063, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
       propertyPath: m_MaxRaycastDistance
       value: 20
@@ -29636,6 +29656,14 @@ PrefabInstance:
       propertyPath: m_LeftHandMoveAction.m_Reference
       value: 
       objectReference: {fileID: 6972639530819350904, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    - target: {fileID: 7858958239974820153, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
+      propertyPath: m_AllowHoveredActivate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973328002167281074, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
+      propertyPath: m_AllowHoveredActivate
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7990873189708867114, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
       propertyPath: m_Model
       value: 
