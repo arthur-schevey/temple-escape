@@ -24,9 +24,9 @@ public class LocationTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             int index = SceneManager.GetActiveScene().buildIndex + 1;
+            Unlock();
             if (index < SceneManager.sceneCountInBuildSettings)
             {
-                Unlock();
                 SceneManager.LoadScene(index);
             }
             else
